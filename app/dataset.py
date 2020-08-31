@@ -14,7 +14,7 @@ class DataSet():
 
         # emg dataset is .npy file format, data is already standardized
         self.input = np.load(f'{cwd}/dataset/extracted/extracted_features.npy')
-        
+
         # features are in every column except the last one
         self.data = self.input[:, :-1]
 
