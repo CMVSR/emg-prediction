@@ -1,0 +1,43 @@
+# DATASET
+TEST_SIZE = 0.1
+RANDOM_STATE = 5
+
+# EPISODES
+ENV_MEMORY_SIZE = 100
+
+# REWARDS
+# penalty for illegal action
+ILLEGAL_ACTION_PUNISH = -1
+
+# penalty for feature action
+FEATURE_ACTION_PUNISH = -0.001
+
+# reward for correct classification
+CLASSIFICATION_REWARD = 1
+
+# penalty for wrong classification
+CLASSIFICATION_PUNISHMENT = -1
+
+REWARDS = [
+    ILLEGAL_ACTION_PUNISH,
+    FEATURE_ACTION_PUNISH,
+    CLASSIFICATION_REWARD,
+    CLASSIFICATION_PUNISHMENT
+]
+
+# const for noisifying reward
+REWARD_BETA = 0.1
+
+# const for good precision cut off
+
+# MODEL
+HIDDEN_LAYER_SIZE = 256
+NUM_LAYERS = 3
+
+# AGENT
+LEARNING_RATE = 1e-3
+GAMMA = 0.95
+VALUE_C = 0.5
+ENTROPY_C = 1e-3
+BATCH_SIZE = 256
+UPDATES = 100
