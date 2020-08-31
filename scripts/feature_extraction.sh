@@ -1,11 +1,14 @@
 #!/bin/bash
 
-# to run on one gpu
+echo "creating directories..."
+mkdir ./dataset/extracted
+
+echo "extracting features..."
 docker run \
     --gpus device=0 \
     --volume $(pwd):/home/emg-prediction \
     --workdir /home/emg-prediction \
     --user $(id -u):$(id -g) \
-    -d -it \
     --detach-keys="a" \
-    emg-prediction
+    emg-prediction-feature-extraction
+

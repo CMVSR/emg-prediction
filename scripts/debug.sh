@@ -6,4 +6,3 @@ docker run \
     -p 127.0.0.1:5678:5678 \
     --rm \
     emg-prediction
-    

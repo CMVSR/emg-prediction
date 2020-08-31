@@ -3,3 +3,10 @@
 __pycache__
 *.pyc
 *.json
+
+# data
+dataset/filtered/*
+dataset/extracted/*
+
+# models
+models/extraction_model
