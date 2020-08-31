@@ -1,14 +1,14 @@
 init:
-	build
-	create_dataset
+	make build
+	make create_dataset
 
 ## BUILD DOCKER IMAGES
 
 build:
-	build_app
-	build_debug
-	build_extraction_model
-	build_feature_extraction
+	make build_app
+	make build_debug
+	make build_extraction_model
+	make build_feature_extraction
 
 build_app:
 	bash ./scripts/build_app.sh
@@ -25,9 +25,9 @@ build_feature_extraction:
 ## CREATE DATASETS
 
 create_dataset:
-	create_filtered
-	train_model
-	feature_extraction
+	make create_filtered
+	make train_model
+	make feature_extraction
 
 create_filtered:
 	bash ./scripts/create_filtered.sh

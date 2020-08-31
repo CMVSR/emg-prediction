@@ -5,4 +5,4 @@ docker run \
     --workdir /home/emg-prediction \
     -p 127.0.0.1:5678:5678 \
     --rm \
-    emg-prediction
+    emg-prediction-debug

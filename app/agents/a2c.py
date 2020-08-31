@@ -45,7 +45,7 @@ class Model(tf.keras.Model):
     action_number = np.asarray(action)[0]
     while not(actions[action_number]):
       arr = np.array(logits)
-      arr[0][action_number] -= 1 
+      arr[0][action_number] -= 1
       logits = tf.convert_to_tensor(arr)
       action = self.dist.predict_on_batch(logits)
       action_number = np.asarray(action)[0]

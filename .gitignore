@@ -1,8 +1,9 @@
-.vscode
 .env
 __pycache__
 *.pyc
-*.json
+
+# vscode
+*.code-workspace
 
 # data
 dataset/filtered/*
@@ -10,3 +11,6 @@ dataset/extracted/*
 
 # models
 models/extraction_model
+
+# logs
+logs/*.json

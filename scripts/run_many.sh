@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # to run multiple containers on different gpus
-for i in {2..5}
+for i in {0..3}
 do
     docker run \
         --gpus device=$i \
@@ -10,5 +10,5 @@ do
         --user $(id -u):$(id -g) \
         -d -it \
         --detach-keys="a" \
-        emg-prediction
+        emg-prediction-app
 done
