@@ -7,7 +7,17 @@ mkdir ./dataset/filtered/move_down
 mkdir ./dataset/filtered/no_movement
 
 echo "resampling and filtering data..."
-python3 ./dataset/resample_data.py
+docker run \
+    --volume $(pwd):/home/emg-prediction \
+    --workdir /home/emg-prediction \
+    --user $(id -u):$(id -g) \
+    --detach-keys="a" \
+    emg-prediction python3 ./dataset/resample_data.py
 
 echo "combining patient data..."
-python3 ./dataset/build_filtered.py
+docker run \
+    --volume $(pwd):/home/emg-prediction \
+    --workdir /home/emg-prediction \
+    --user $(id -u):$(id -g) \
+    --detach-keys="a" \
+    emg-prediction python3 ./dataset/build_filtered.py

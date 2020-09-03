@@ -10,5 +10,5 @@ docker run \
     --workdir /home/emg-prediction \
     --user $(id -u):$(id -g) \
     --detach-keys="a" \
-    emg-prediction-feature-extraction
+    emg-prediction python3 /home/emg-prediction/dataset/feature_extraction.py
 

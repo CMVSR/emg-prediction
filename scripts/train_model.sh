@@ -7,4 +7,4 @@ docker run \
     --workdir /home/emg-prediction \
     --user $(id -u):$(id -g) \
     --detach-keys="a" \
-    emg-prediction-extraction-model
+    emg-prediction python3 /home/emg-prediction/dataset/train_model.py

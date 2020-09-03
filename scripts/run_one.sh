@@ -8,4 +8,4 @@ docker run \
     --user $(id -u):$(id -g) \
     -d -it \
     --detach-keys="a" \
-    emg-prediction-app
+    emg-prediction python3 /home/emg-prediction/app/app.py

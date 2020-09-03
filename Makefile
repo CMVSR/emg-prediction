@@ -5,22 +5,7 @@ init:
 ## BUILD DOCKER IMAGES
 
 build:
-	make build_app
-	make build_debug
-	make build_extraction_model
-	make build_feature_extraction
-
-build_app:
-	bash ./scripts/build_app.sh
-
-build_debug:
-	bash ./scripts/build_debug.sh
-
-build_extraction_model:
-	bash ./scripts/build_extraction_model.sh
-
-build_feature_extraction:
-	bash ./scripts/build_feature_extraction.sh
+	bash ./scripts/build.sh
 
 ## CREATE DATASETS
 
