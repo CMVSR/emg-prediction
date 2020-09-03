@@ -1,5 +1,7 @@
 #!/bin/bash
 
+mkdir ./logs
+
 # to run multiple containers on different gpus
 for i in {0..3}
 do

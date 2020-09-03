@@ -1,5 +1,7 @@
 #!/bin/bash
 
+mkdir ./logs
+
 # to run on one gpu
 docker run \
     --gpus device=0 \
