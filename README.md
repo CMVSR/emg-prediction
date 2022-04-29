@@ -30,4 +30,17 @@ There are 4 docker images used in the project. `app, debug, extraction_model, an
 
 # Cite the paper
 
-`todo`
+See CITATION.bib
+
+```
+@inproceedings{gardner_emg_2020,
+	title = {{EMG} {Based} {Simultaneous} {Wrist} {Motion} {Prediction} {Using} {Reinforcement} {Learning}},
+	doi = {10.1109/BIBE50027.2020.00172},
+	author = {Gardner, Noah and Tekes, Coskun and Weinberg, Nate and Ray, Nick and Duran, Julian and Housley, Stephen N. and Wu, David and Hung, Chih-Cheng},
+	month = oct,
+	year = {2020},
+	note = {ISSN: 2471-7819},
+	keywords = {Wrist, Performance evaluation, Biological system modeling, Reinforcement learning, Feature extraction, Robot sensing systems, Testing, EMG, Stroke Rehabilitation, CNN, Reinforcement Learning},
+	pages = {1016--1021},
+}
+```
